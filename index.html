@@ -19,34 +19,43 @@
 				<div class="grades-container">
 					<div class="grades__type-row">
 						<button class="grades-container__type">III LO</button>
-						<button class="grades-container__type">Techikum Nr 2</button>
+						<button class="grades-container__type">Technikum Nr 2</button>
 					</div>
 
 					<h2>Świadectwo:</h2>
+					<hr class="grades-line" />
 					<p class="grades-container__title">j. polski</p>
 					<input
 						type="number"
 						name="grades-container"
-						id="gradesInput"
+						id="gradePolish"
 						min="1"
 						max="6"
 						class="grades-container__input"
+						placeholder="Wpisz ocenę:"
 					/>
 					<p class="grades-container__title">matematyka</p>
 					<input
 						type="number"
 						name="grades-container"
-						id="gradesInput"
+						id="gradeMath"
 						min="1"
 						max="6"
 						class="grades-container__input"
+						placeholder="Wpisz ocenę:"
 					/>
 					<p class="grades-container__title">język obcy</p>
-					<select
-						name=""
-						id="grades-container__select--IIILO"
+					<input
+						type="number"
+						name="grades-container"
+						id="gradeForeign"
+						min="1"
+						max="6"
 						class="grades-container__input"
-					>
+						placeholder="Wpisz ocenę:"
+					/>
+					<p class="grades-container__title">Przedmiot dodatkowy:</p>
+					<select name="" id="" class="grades-container__input">
 						<option value="biologia">Biologia</option>
 						<option value="chemia">Chemia</option>
 						<option value="fizyka">Fizyka</option>
@@ -55,14 +64,34 @@
 						<option value="informatyka">Informatyka</option>
 						<option value="wos">WOS</option>
 					</select>
+					<input
+						type="number"
+						name="grades-container"
+						id="gradePlus"
+						min="1"
+						max="6"
+						class="grades-container__input"
+						placeholder="Wpisz ocenę:"
+					/>
 					<p class="grades-container__title">Świadectwo z wyróżnieniem?</p>
-					<input type="text" class="grades-container__input" />
+					<input
+						type="checkbox"
+						name=""
+						id="gradeDistYes"
+						class="grades-container__checkbox"
+					/>
+					<span>Tak</span>
 					<p class="grades-container__title">Wolontariat?</p>
-					<input type="text" class="grades-container__input" />
-
+					<input
+						type="checkbox"
+						name=""
+						id="volunteerYes"
+						class="grades-container__checkbox"
+					/><span>Tak</span>
 					<footer class="grades-container__score">Twój wynik to:</footer>
 				</div>
 			</div>
 		</section>
+		<script src="./js/script.js"></script>
 	</body>
 </html>

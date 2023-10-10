@@ -15,9 +15,14 @@ body {
 	width: 85%;
 	margin: 0 auto;
 }
+.grades-line {
+	width: 100%;
+	height: 3px;
+	background-color: #fff;
+}
 .grades {
 	width: 100%;
-	height: 100vh;
+	height: 140vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -26,33 +31,42 @@ body {
 		font-size: 3rem;
 		text-align: center;
 		color: #000;
+		margin-bottom: 0.6em;
 	}
 
 	&-container {
 		position: relative;
 		width: 100%;
-		height: 100vh;
+		height: 130vh;
 		background-color: #097bd8;
 		border-radius: 4px;
-		padding: 0.8em;
+		padding: 2.6em;
 		&__type {
-			// width: 50%;
 			padding: 1em;
 			background-color: white;
 			border: none;
 			font-size: 2rem;
+			border-radius: 4px;
 		}
 		h2 {
 			margin: 1em 0;
-			font-size: 2rem;
+			font-size: 2.2rem;
 		}
 		&__title {
-			font-size: 1.4rem;
-			margin: 0.5em 0;
+			font-size: 1.8rem;
+			margin: 0.8em 0;
 		}
 		&__input {
 			width: 100%;
-			padding: 0.6em;
+			padding: 1.2em;
+			border: none;
+		}
+		select {
+			margin-bottom: 2em;
+		}
+		span {
+			font-size: 1.6rem;
+			margin-left: 0.6em;
 		}
 
 		&__score {
@@ -64,13 +78,16 @@ body {
 			background-color: white;
 			color: #000;
 			font-size: 3rem;
-			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 	}
 	&__type-row {
+		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-around;
 		width: 100%;
 	}
 }
