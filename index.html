@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JSKalkulator</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<section id="grades" class="grades">
+			<div class="wrapper">
+				<h1>Kalkulator punktów:</h1>
+				<div class="grades-container">
+					<div class="grades__type-row">
+						<button class="grades-container__type">III LO</button>
+						<button class="grades-container__type">Techikum Nr 2</button>
+					</div>
+
+					<h2>Świadectwo:</h2>
+					<p class="grades-container__title">j. polski</p>
+					<input
+						type="number"
+						name="grades-container"
+						id="gradesInput"
+						min="1"
+						max="6"
+						class="grades-container__input"
+					/>
+					<p class="grades-container__title">matematyka</p>
+					<input
+						type="number"
+						name="grades-container"
+						id="gradesInput"
+						min="1"
+						max="6"
+						class="grades-container__input"
+					/>
+					<p class="grades-container__title">język obcy</p>
+					<select
+						name=""
+						id="grades-container__select--IIILO"
+						class="grades-container__input"
+					>
+						<option value="biologia">Biologia</option>
+						<option value="chemia">Chemia</option>
+						<option value="fizyka">Fizyka</option>
+						<option value="geografia">Geografia</option>
+						<option value="historia">Historia</option>
+						<option value="informatyka">Informatyka</option>
+						<option value="wos">WOS</option>
+					</select>
+					<p class="grades-container__title">Świadectwo z wyróżnieniem?</p>
+					<input type="text" class="grades-container__input" />
+					<p class="grades-container__title">Wolontariat?</p>
+					<input type="text" class="grades-container__input" />
+
+					<footer class="grades-container__score">Twój wynik to:</footer>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
