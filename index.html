@@ -15,12 +15,40 @@
 	<body>
 		<section id="grades" class="grades">
 			<div class="wrapper">
-				<h1>Kalkulator punktów:</h1>
+				<h1>Kalkulator punktów (III LO):</h1>
 				<div class="grades-container">
 					<div class="grades__type-row">
-						<button class="grades-container__type">III LO</button>
-						<button class="grades-container__type">Technikum Nr 2</button>
+						<button class="grades-container__type" id="changeLo">III LO</button>
+						<button class="grades-container__type" id="changeTech">
+							Technikum Nr 2
+						</button>
 					</div>
+					<h2>Egzamin:</h2>
+					<hr class="grades-line" />
+					<p class="grades-container__title">j. polski</p>
+					<input
+						type="number"
+						name="grades-container"
+						id="gradePolExam"
+						class="grades-container__input"
+						placeholder="Wpisz wynik egzaminu:"
+					/>
+					<p class="grades-container__title">matematyka</p>
+					<input
+						type="number"
+						name="grades-container"
+						id="gradeMathExam"
+						class="grades-container__input"
+						placeholder="Wpisz wynik egzaminu:"
+					/>
+					<p class="grades-container__title">język angielski</p>
+					<input
+						type="number"
+						name="grades-container"
+						id="gradeForeignExam"
+						class="grades-container__input"
+						placeholder="Wpisz wynik egzaminu:"
+					/>
 
 					<h2>Świadectwo:</h2>
 					<hr class="grades-line" />
@@ -55,7 +83,7 @@
 						placeholder="Wpisz ocenę:"
 					/>
 					<p class="grades-container__title">Przedmiot dodatkowy:</p>
-					<select name="" id="" class="grades-container__input">
+					<select name="" id="select" class="grades-container__input">
 						<option value="biologia">Biologia</option>
 						<option value="chemia">Chemia</option>
 						<option value="fizyka">Fizyka</option>
@@ -73,6 +101,8 @@
 						class="grades-container__input"
 						placeholder="Wpisz ocenę:"
 					/>
+					<h2>Dodatkowe:</h2>
+					<hr class="grades-line" />
 					<p class="grades-container__title">Świadectwo z wyróżnieniem?</p>
 					<input
 						type="checkbox"
@@ -88,6 +118,181 @@
 						id="volunteerYes"
 						class="grades-container__checkbox"
 					/><span>Tak</span>
+					<h2>Konkursy:</h2>
+					<hr class="grades-line" />
+					<p class="grades-container__title">
+						Za uzyskanie w zawodach wiedzy będących konkursem o zasięgu
+						ponadwojewódzkim organizowanym przez kuratorów oświaty na podstawie
+						zawartych porozumień:
+					</p>
+					<div class="radio-container">
+						<input
+							type="radio"
+							name="firstGroup"
+							id="contestTen"
+							class="ContestFirst"
+						/>tytułu finalisty konkursu przedmiotowego
+						<input
+							type="radio"
+							name="firstGroup"
+							id="contestSeven"
+							class="ContestSecond"
+						/>tytułu laureata konkursu tematycznego lub interdyscyplinarnego
+						<input
+							type="radio"
+							name="firstGroup"
+							id="contestFive"
+							class="ContestThird"
+						/>tytułu finalisty konkursu tematycznego lub interdyscyplinarnego
+					</div>
+					<p class="grades-container__title">
+						Za uzyskanie w zawodach wiedzy będących konkursem o zasięgu
+						międzynarodowym albo ogólnopolskim, przeprowadzanym zgodnie z
+						przepisami wydanymi na podstawie art. 22 ust. 6 ustawy z dnia 7
+						września 1991 r. o systemie oświaty (Dz. U. z 2022 r. poz. 2230),
+						zwanej dalej „ustawą o systemie oświaty”:
+					</p>
+					<div class="radio-container">
+						<input
+							type="radio"
+							name="secondGroup"
+							id="contestTen"
+							class="contestFourth"
+						/>tytułu finalisty konkursu przedmiotowego
+						<input
+							type="radio"
+							name="secondGroup"
+							id="contestSeven"
+							class="contestFifth"
+						/>
+						tytułu laureata konkursu interdyscyplinarnego
+
+						<input
+							type="radio"
+							name="secondGroup"
+							id="contestFive"
+							class="contestSixth"
+						/>tytułu finalisty konkursu interdyscyplinarnego
+					</div>
+					<p class="grades-container__title">
+						Za uzyskanie w zawodach wiedzy będących konkursem o zasięgu
+						wojewódzkim organizowanym przez kuratora oświaty:
+					</p>
+					<div class="radio-container">
+						<input
+							type="radio"
+							name="thirdGroup"
+							id="contestTen"
+							class="contestSeventh"
+						/>dwóch lub więcej tytułów finalisty konkursu przedmiotowego
+						<input
+							type="radio"
+							name="thirdGroup"
+							id="contestSeven"
+							class="contestEighth"
+						/>
+						dwóch lub więcej tytułów laureata konkursu tematycznego lub
+						interdyscyplinarnego
+
+						<input
+							type="radio"
+							name="thirdGroup"
+							id="contestFive"
+							class="contestNinth"
+						/>dwóch lub więcej tytułów finalisty konkursu tematycznego lub
+						interdyscyplinarnego
+						<input
+							type="radio"
+							name="thirdGroup"
+							id="contestFive"
+							class="contestTenth"
+						/>tytułu finalisty konkursu przedmiotowego
+						<input
+							type="radio"
+							name="thirdGroup"
+							id="contestFive"
+							class="contestEleventh"
+						/>tytułu laureata konkursu tematycznego albo interdyscyplinarnego
+						<input
+							type="radio"
+							name="thirdGroup"
+							id="contestFive"
+							class="contestTwelfth"
+						/>tytułu finalisty konkursu tematycznego albo interdyscyplinarnego
+					</div>
+					<p class="grades-container__title">
+						uzyskanie w zawodach wiedzy będących konkursem o zasięgu
+						ponadwojewódzkim lub wojewódzkim, przeprowadzanym zgodnie z
+						przepisami wydanymi na podstawie art. 22 ust. 6 ustawy o systemie
+						oświaty
+					</p>
+					<div class="radio-container">
+						<input
+							type="radio"
+							name="fourGroup"
+							id="contestEssa"
+							class="contestThirteenth"
+						/>
+						dwóch lub więcej tytułów finalisty konkursu przedmiotowego
+						<input
+							type="radio"
+							name="fourGroup"
+							id="contestSeven"
+							class="contestThourteenth"
+						/>
+						dwóch lub więcej tytułów laureata konkursu interdyscyplinarnego –
+
+						<input
+							type="radio"
+							name="fourGroup"
+							id="contestFive"
+							class="contestFifteenth"
+						/>tytułu finalisty konkursu przedmiotowego
+						<input
+							type="radio"
+							name="fourGroup"
+							id="contestFifteenth"
+							class="contestSixteenth"
+						/>
+						tytułu laureata konkursu interdyscyplinarnego
+					</div>
+					<p class="grades-container__title">
+						uzyskanie wysokiego miejsca nagrodzonego lub uhonorowanego
+						zwycięskim tytułem w zawodach wiedzy innych niż wymienione w pkt 4-7
+						regulaminu, artystycznych i sportowych, organizowanych przez
+						kuratora oświaty lub inne podmioty działające na terenie szkoły, na
+						szczeblu:
+					</p>
+					<div class="radio-container">
+						<input
+							type="radio"
+							name="fiveGroup"
+							id="contestTen"
+							class="contestSeventeenth"
+						/>
+						międzynarodowym
+						<input
+							type="radio"
+							name="fiveGroup"
+							id="contestSeven"
+							class="contestEighteenth"
+						/>
+						krajowym
+
+						<input
+							type="radio"
+							name="fiveGroup"
+							id="contestFive"
+							class="contestNineteenth"
+						/>wojewódzkim
+						<input
+							type="radio"
+							name="fiveGroup"
+							id="contestFive"
+							class="contestTwenth"
+						/>
+						powiatowym
+					</div>
 					<footer class="grades-container__score">Twój wynik to:</footer>
 				</div>
 			</div>
